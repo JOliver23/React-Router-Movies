@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MovieCard from './MovieCard';
 
 const MovieList = props => {
   console.log("MovieList props: ", props);
@@ -31,6 +32,7 @@ function MovieDetails({ movie }) {
             {star}
           </div>
         ))}
+        <MovieCard />
       
       </div>
     </Link>

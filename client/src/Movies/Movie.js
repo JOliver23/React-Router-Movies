@@ -6,6 +6,8 @@ const Movie = (props) => {
   const [movie, setMovie] = useState();
   const params = useParams();
   console.log("movie params", params);
+  console.log("Movie Props: ", props);
+  console.log("Assigned Props: ", movie);
   const movieItem = params.movieID;
  
   useEffect(() => {
